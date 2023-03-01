@@ -64,6 +64,8 @@ const processSearch = (dataLimit) => {
 }
 
 document.getElementById('btn-search').addEventListener('click', function(){
+    const drinksContainerSection = document.getElementById('drinks-container-section')
+    drinksContainerSection.classList.remove('hidden')
     processSearch(3)
 })
 
