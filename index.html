@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Practice</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="w-9/12 mx-auto mt-10 mb-10">
+        <h1 class="text-5xl text-center font-semibold">List of Cocktails</h1>
+        <div class="w-1/2 mx-auto mt-5">
+            <input id="search-field" class="w-3/4 px-6 py-2 bg-gray-300 rounded-lg" type="text"
+                placeholder="Search your desert here">
+            <button id="btn-search"
+                class="bg-[#0E1B34] hover:bg-indigo-900 ease-in-out duration-200 text-white rounded-lg px-6 py-2">Search</button>
+        </div>
+    </header>
+    <main>
+        <div id="toggle-loader" class="w-1/2 mx-auto hidden">
+            <progress class="progress w-full"></progress>
+        </div>
+        <input type="checkbox" id="my-modal" class="modal-toggle" />
+        <div id="modal-container" class="modal">
+            
+        </div>
+        <section class="w-9/12 mx-auto mb-10">
+            <div id="drinks-container" class="grid grid-cols-3 gap-10">
+
+            </div>
+            <div id="show-more-btn" class="mt-5 w-1/6 mx-auto hidden">
+                <button id="btn-show-more" class="bg-[#0E1B34] hover:bg-indigo-900 ease-in-out duration-200 text-white rounded-lg px-6 py-2">Show More</button>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/cocktail.js"></script>
+</body>
+
+</html>
